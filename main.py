@@ -1,4 +1,3 @@
-import part4.main_run as pt
+import part5.main_run as pt
 
-if __name__ == '__main__':
-    pt.main()
+pt.main()
