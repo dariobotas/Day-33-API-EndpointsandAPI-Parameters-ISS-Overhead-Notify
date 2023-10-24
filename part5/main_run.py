@@ -10,9 +10,9 @@ import requests
 
 def main():
   def get_quote():
-    quote = requests.get('https://api.kanye.rest/').json()['quote']
+    quote = requests.get('https://api.kanye.rest/')
     quote.raise_for_status()
-    canvas.itemconfig(quote_text,text=quote['quote'])
+    canvas.itemconfig(quote_text,text=quote.json()['quote'])
   
   # Set up the canvas
   window = Tk()
